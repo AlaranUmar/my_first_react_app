@@ -23,9 +23,9 @@ function App() {
           >
             +
           </button>
-          {/* <button onClick={() => setCounter((prevCounter) => prevCounter - 1)}> */}
-          {/* - */}
-          {/* </button> */}
+          <button onClick={() => setCounter((prevCounter) => prevCounter - 1)}>
+          -
+          </button>
           <button>/</button>
           <button>*</button>
           <button>^</button>
