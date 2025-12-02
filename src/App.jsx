@@ -2,11 +2,17 @@ import { useState } from "react";
 import "./App.css";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Home from "./pages/Home";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(null);
 
-  return <>{isLoggedIn ? <Login /> : <Signup />}</>;
+  return (
+    <>
+      {isLoggedIn ? <Login /> : <Signup />}
+      <Home />
+    </>
+  );
 }
 
 export default App;
