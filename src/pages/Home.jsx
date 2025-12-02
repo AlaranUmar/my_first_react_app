@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { supabase } from "../supabase/client";
+import Product from "../components/Product";
 
 function Home() {
   const [title, setTitle] = useState("");
@@ -25,7 +26,7 @@ function Home() {
 
   // }
   return (
-    <div className="flex flex-col h-screen justify-center items-center bg-gray-200 gap-5">
+    <div className="flex flex-col min-h-screen justify-center items-center bg-gray-200 gap-5">
       <div className=" bg-red-400 sm:w-md px-3 py-3 rounded-xl w-9/10">
         <p className="text-gray-200 text-xl font-mono font-extrabold">
           Create update
@@ -110,7 +111,7 @@ function Home() {
           </div>
         </form>
       </div>
-      {product?.title}
+      <Product />
     </div>
   );
 }
